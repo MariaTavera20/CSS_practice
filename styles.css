@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+
+.root {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+
+
+.card {
+
+    background-color: hsl(210, 46%, 95%);
+    display: grid;
+    grid-template-rows: 1.5fr 1.5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    padding: 200px;
+    font-family: 'barlow semi Condensed ', sans-serif;
+    line-height: 200%;
+    border-color: black;
+
+
+
+
+}
+
+
+
+
+
+.card_box__photo {
+    border-radius: 100%;
+
+}
+
+
+.card_box--purple {
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 20px;
+    color: white;
+    grid-column: 1 / span 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding: 40px;
+    position: relative;
+    background-image: url('/images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: 70% 0%;
+    background-size:  180px auto; 
+
+    
+
+}
+
+.card_box--white {
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    border-radius: 20px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding: 40px;
+    position: relative;
+
+}
+
+.card_box--gray {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    border-radius: 20px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding: 40px;
+    position: relative;
+}
+
+
+.card_box--dark {
+
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+    border-radius: 20px;
+    grid-column: 2/span 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding: 40px;
+    position: relative;
+
+}
+
+.card_box--white--size {
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    border-radius: 20px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row: 1/span 2;
+    padding: 40px;
+    position: relative;
+
+}
+
+.bold {
+    font-size: x-large;
+    font-weight: 600;
+
+}
+
+.opacity_1 {
+    opacity: 0.5;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+
+}
+
+.opacity_2 {
+    opacity: 0.7;
+}
+
+.name {
+    position: absolute;
+    top: 30px;
+    left: 120px;
+
+}
+
+@media (max-width:1440px ) {
+    .card {
+        display: grid;
+        grid-template-rows: 1.5fr 1.5fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 40px;
+        padding: 200px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+
+}
+
+
